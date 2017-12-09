@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'notoThin';
+  src: url('../font/thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'notoBlack';
+  src: url('../font/black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'notoBold';
+  src: url('../font/bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'notoLight';
+  src: url('../font/light.ttf') format('truetype');
+}

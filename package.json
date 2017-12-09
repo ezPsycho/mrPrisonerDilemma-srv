@@ -1,0 +1,19 @@
+{
+  "name": "pdes",
+  "version": "1.0.0",
+  "description": "The resource package generator and server side program of Prisoner Dillema exeriment",
+  "main": "server.js",
+  "author": "Losses Don",
+  "license": "GPL-3.0",
+  "scripts": {
+        "start": "node server.js",
+        "debugClient": "node debugClient.js",
+        "generator": "node generator.js"
+      },
+  "dependencies": {
+    "csv-stringify": "^2.0.0",
+    "archiver": "^2.1.0",
+    "nightmare": "^2.10.0",
+    "prompt": "^1.0.0"
+  }
+}

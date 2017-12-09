@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  top: calc(-0.2 * 1125px);
+  left: calc(-0.2 * 2000px);
+  width: 2000px;
+  height: 1125px;
+  transform: scale(0.6);
+  background: rgb(68, 114, 196);
+  font-family: 'notoThin';
+  position: absolute;
+}
+
+.content {
+  padding: 60px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.introduction {
+  display: none;
+}
+
+.slide .introduction {
+  display: block;
+}
+
+.main.selection .frame {
+  margin-left: -140px;
+}
+
+.main.error {
+  background: rgb(202, 0, 0);
+}
+
+.main.error>* {
+  display: none;
+}
+.main.error::after {
+  content: 'ERROR';
+  width: 100%;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  display: block;
+}
+
+.b {
+  font-family: 'notoBold';
+}
+
+.frame {
+  color: white;
+}
+
+.frame table, td {
+  border: 5px solid rgb(217, 217, 217);
+  border-collapse: collapse;
+  font-family: 'notoLight';
+}
+
+.frame table td{
+  width: 370px;
+  height: 370px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.frame table td.selected{
+  background: rgb(255, 192, 0);
+  color: black;
+}
+
+.player {
+  font-size: 70px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.self {
+  width: 755px;
+  margin: 0 0 30px 145px;
+}
+
+.down {
+  width: 855px;
+  display: flex;
+}
+
+.other_container {
+  height: 755px;
+  width: 100px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.other {
+  top: 327px;
+  left: -327px;
+  width: 755px;
+  color: rgb(196, 203, 214);
+  font-size: 40px;
+  transform: rotate(-90deg);
+  position:absolute;
+}
+
+.action {
+  flex-direction: row;
+  display: flex;
+}
+
+.action>* {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 0.7em;
+}
+
+.introduction {
+  top: 40px;
+  left: -50px;
+  width: 750px;
+  color: white;
+  font-size: 50px;
+  line-height: 1.9em;
+  position: relative;
+}
+
+.introduction>div {
+  display: none;
+}
+
+.introduction>div.show {
+  display: block;
+}
